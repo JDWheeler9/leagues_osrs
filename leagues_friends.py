@@ -1,6 +1,8 @@
 import requests
 from bs4 import BeautifulSoup
 import markdownify as mdf
+from datetime import datetime as dt
+import os
 
 def fetch_hiscore_data(username):
     """
@@ -51,7 +53,16 @@ def fetch_hiscore_data(username):
         return f"An error occurred: {str(e)}"
 
 names = ["Noclis", "Im sacred"]
+current_date = dt.now().strftime("%Y-%m-%d")
+directory_path = os.path.join(".", current_date)
+if not os.path.exists(directory_path):
+    os.makedirs(directory_path)
+    print(f"Directory created: {directory_path}")
+else:
+    print(f"Directory already exists: {directory_path}")
 
-for name in names:
-    result = fetch_hiscore_data(name)
-    print(mdf.markdownify(result))
+with open(f"{directory_path}/highscores.md", "w") as file:
+    for name in names:
+        result = fetch_hiscore_data(name)
+        # print(mdf.markdownify(result))
+        file.write(mdf.markdownify(result))
