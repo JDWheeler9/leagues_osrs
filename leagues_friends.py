@@ -32,19 +32,12 @@ def fetch_hiscore_data(username):
             # Parse the HTML response using BeautifulSoup
             soup = BeautifulSoup(response.text, "html.parser")
             
-            # Example: Extract data inside a specific tag
-            # Adjust the tag name, class, or id based on the structure of the response
-            content = soup.find(id="contentHiscores")  # Replace "div" and "stats" with the actual tag/class
+            # Find just the highscores data
+            content = soup.find(id="contentHiscores")
 
+            # Only add if we got something back
             if content:
-                 return content.prettify()  # Return the extracted data
-                # rows = content.find_all("tr")
-                # for row in rows:
-                #     datas = row.find_all("td")
-                #     for data in datas:
-                #         if data.string == "":
-                #             continue
-                #         else      
+                 return content.prettify()  # Return the extracted data, in a pretty html format  
             else:
                 return "No matching tag found in the response."
         else:
@@ -52,7 +45,13 @@ def fetch_hiscore_data(username):
     except Exception as e:
         return f"An error occurred: {str(e)}"
 
-names = ["Noclis", "Im sacred"]
+
+### Main script start
+
+# Add any new names here
+names = ["Noclis", "Im sacred", "Lrauq", "GIM Tgump", "Dranathulhu", "EmoArbiter", "FGCBrave", "realNovatose"]
+
+# Make directory for current day
 current_date = dt.now().strftime("%Y-%m-%d")
 directory_path = os.path.join(".", current_date)
 if not os.path.exists(directory_path):
@@ -61,8 +60,8 @@ if not os.path.exists(directory_path):
 else:
     print(f"Directory already exists: {directory_path}")
 
+# Fetch and write to files
 with open(f"{directory_path}/highscores.md", "w") as file:
     for name in names:
         result = fetch_hiscore_data(name)
-        # print(mdf.markdownify(result))
         file.write(mdf.markdownify(result))
