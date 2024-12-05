@@ -65,3 +65,5 @@ with open(f"{directory_path}/highscores.md", "w") as file:
     for name in names:
         result = fetch_hiscore_data(name)
         file.write(mdf.markdownify(result))
+
+print("Link to file: https://github.com/JDWheeler9/leagues_osrs/blob/main/" + current_date +"/highscores.md")
