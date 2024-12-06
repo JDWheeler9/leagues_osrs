@@ -1,6 +1,5 @@
 import requests
-from bs4 import BeautifulSoup
-import markdownify as mdf
+import json
 from datetime import datetime as dt
 import os
 
@@ -15,31 +14,15 @@ def fetch_hiscore_data(username):
         str: Extracted data from the HTML response or a message indicating no data was found.
     """
     # URL of the API
-    url = "https://secure.runescape.com/m=hiscore_oldschool_seasonal/hiscorepersonal"
-
-    # Parameters to include in the body
-    payload = {
-        "user1": username,
-        "submit": "Submit"
-    }
+    url = f"https://secure.runescape.com/m=hiscore_oldschool_seasonal/index_lite.json?player={username}"
 
     try:
         # Send the POST request
-        response = requests.post(url, data=payload)
+        response = requests.get(url)
 
         # Check if the request was successful
         if response.status_code == 200:
-            # Parse the HTML response using BeautifulSoup
-            soup = BeautifulSoup(response.text, "html.parser")
-            
-            # Find just the highscores data
-            content = soup.find(id="contentHiscores")
-
-            # Only add if we got something back
-            if content:
-                 return content.prettify()  # Return the extracted data, in a pretty html format  
-            else:
-                return "No matching tag found in the response."
+            return response.json()
         else:
             return f"Request failed with status code: {response.status_code}"
     except Exception as e:
@@ -61,9 +44,7 @@ else:
     print(f"Directory already exists: {directory_path}")
 
 # Fetch and write to files
-with open(f"{directory_path}/highscores.md", "w") as file:
-    for name in names:
-        result = fetch_hiscore_data(name)
-        file.write(mdf.markdownify(result))
-
-print("Link to file: https://github.com/JDWheeler9/leagues_osrs/blob/main/" + current_date +"/highscores.md")
+for name in names:
+        with open(f"{directory_path}/{name.replace(" ", "_")}.json", "w") as file:
+            result = fetch_hiscore_data(name)
+            file.write(json.dumps(result, indent=4))
