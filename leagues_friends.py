@@ -47,4 +47,6 @@ else:
 for name in names:
         with open(f"{directory_path}/{name.replace(" ", "_")}.json", "w") as file:
             result = fetch_hiscore_data(name)
+            print(name + ":")
+            print(result)
             file.write(json.dumps(result, indent=4))

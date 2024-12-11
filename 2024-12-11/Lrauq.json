@@ -3,21 +3,21 @@
         {
             "id": 0,
             "name": "Overall",
-            "rank": 18720,
+            "rank": 18730,
             "level": 2105,
             "xp": 608942923
         },
         {
             "id": 1,
             "name": "Attack",
-            "rank": 7335,
+            "rank": 7337,
             "level": 99,
             "xp": 54832764
         },
         {
             "id": 2,
             "name": "Defence",
-            "rank": 8954,
+            "rank": 8956,
             "level": 99,
             "xp": 51540700
         },
@@ -31,140 +31,140 @@
         {
             "id": 4,
             "name": "Hitpoints",
-            "rank": 11626,
+            "rank": 11628,
             "level": 99,
             "xp": 104058694
         },
         {
             "id": 5,
             "name": "Ranged",
-            "rank": 79846,
+            "rank": 79859,
             "level": 99,
             "xp": 23936568
         },
         {
             "id": 6,
             "name": "Prayer",
-            "rank": 80425,
+            "rank": 80435,
             "level": 99,
             "xp": 13136573
         },
         {
             "id": 7,
             "name": "Magic",
-            "rank": 27376,
+            "rank": 27380,
             "level": 99,
             "xp": 59474768
         },
         {
             "id": 8,
             "name": "Cooking",
-            "rank": 171028,
+            "rank": 171041,
             "level": 87,
             "xp": 4102282
         },
         {
             "id": 9,
             "name": "Woodcutting",
-            "rank": 11963,
+            "rank": 11966,
             "level": 98,
             "xp": 11845961
         },
         {
             "id": 10,
             "name": "Fletching",
-            "rank": 32689,
+            "rank": 32702,
             "level": 95,
             "xp": 8937222
         },
         {
             "id": 11,
             "name": "Fishing",
-            "rank": 87487,
+            "rank": 87507,
             "level": 99,
             "xp": 13034700
         },
         {
             "id": 12,
             "name": "Firemaking",
-            "rank": 66823,
+            "rank": 66833,
             "level": 75,
             "xp": 1233393
         },
         {
             "id": 13,
             "name": "Crafting",
-            "rank": 86249,
+            "rank": 86272,
             "level": 88,
             "xp": 4481666
         },
         {
             "id": 14,
             "name": "Smithing",
-            "rank": 139038,
+            "rank": 139062,
             "level": 72,
             "xp": 902671
         },
         {
             "id": 15,
             "name": "Mining",
-            "rank": 36279,
+            "rank": 36290,
             "level": 89,
             "xp": 4877858
         },
         {
             "id": 16,
             "name": "Herblore",
-            "rank": 1425,
+            "rank": 1426,
             "level": 99,
             "xp": 13952293
         },
         {
             "id": 17,
             "name": "Agility",
-            "rank": 109108,
+            "rank": 109122,
             "level": 72,
             "xp": 955432
         },
         {
             "id": 18,
             "name": "Thieving",
-            "rank": 186531,
+            "rank": 186544,
             "level": 80,
             "xp": 2085969
         },
         {
             "id": 19,
             "name": "Slayer",
-            "rank": 10308,
+            "rank": 10312,
             "level": 99,
             "xp": 25723616
         },
         {
             "id": 20,
             "name": "Farming",
-            "rank": 62376,
+            "rank": 62388,
             "level": 83,
             "xp": 2678306
         },
         {
             "id": 21,
             "name": "Runecraft",
-            "rank": 22050,
+            "rank": 22057,
             "level": 89,
             "xp": 5135296
         },
         {
             "id": 22,
             "name": "Hunter",
-            "rank": 22719,
+            "rank": 22728,
             "level": 88,
             "xp": 4551393
         },
         {
             "id": 23,
             "name": "Construction",
-            "rank": 32705,
+            "rank": 32708,
             "level": 99,
             "xp": 13727312
         }
@@ -173,7 +173,7 @@
         {
             "id": 0,
             "name": "League Points",
-            "rank": 11441,
+            "rank": 11450,
             "score": 37210
         },
         {
@@ -215,13 +215,13 @@
         {
             "id": 7,
             "name": "Clue Scrolls (beginner)",
-            "rank": 36809,
+            "rank": 36813,
             "score": 84
         },
         {
             "id": 8,
             "name": "Clue Scrolls (easy)",
-            "rank": 16481,
+            "rank": 16482,
             "score": 140
         },
         {
@@ -239,7 +239,7 @@
         {
             "id": 11,
             "name": "Clue Scrolls (elite)",
-            "rank": 407,
+            "rank": 408,
             "score": 95
         },
         {
@@ -293,13 +293,13 @@
         {
             "id": 20,
             "name": "Amoxliatl",
-            "rank": 15293,
+            "rank": 15294,
             "score": 20
         },
         {
             "id": 21,
             "name": "Araxxor",
-            "rank": 14475,
+            "rank": 14476,
             "score": 149
         },
         {
@@ -311,7 +311,7 @@
         {
             "id": 23,
             "name": "Barrows Chests",
-            "rank": 5323,
+            "rank": 5325,
             "score": 371
         },
         {
@@ -383,19 +383,19 @@
         {
             "id": 35,
             "name": "Dagannoth Prime",
-            "rank": 25011,
+            "rank": 25014,
             "score": 33
         },
         {
             "id": 36,
             "name": "Dagannoth Rex",
-            "rank": 22047,
+            "rank": 22051,
             "score": 38
         },
         {
             "id": 37,
             "name": "Dagannoth Supreme",
-            "rank": 16627,
+            "rank": 16629,
             "score": 51
         },
         {
@@ -503,7 +503,7 @@
         {
             "id": 55,
             "name": "Phantom Muspah",
-            "rank": 20497,
+            "rank": 20501,
             "score": 28
         },
         {
@@ -521,7 +521,7 @@
         {
             "id": 58,
             "name": "Scurrius",
-            "rank": 44436,
+            "rank": 44443,
             "score": 82
         },
         {
@@ -581,13 +581,13 @@
         {
             "id": 68,
             "name": "Theatre of Blood",
-            "rank": 19639,
+            "rank": 19640,
             "score": 7
         },
         {
             "id": 69,
             "name": "Theatre of Blood: Hard Mode",
-            "rank": 23578,
+            "rank": 23581,
             "score": 6
         },
         {
@@ -611,7 +611,7 @@
         {
             "id": 73,
             "name": "TzKal-Zuk",
-            "rank": 17912,
+            "rank": 17913,
             "score": 1
         },
         {
@@ -623,7 +623,7 @@
         {
             "id": 75,
             "name": "Vardorvis",
-            "rank": 14661,
+            "rank": 14663,
             "score": 50
         },
         {
@@ -641,7 +641,7 @@
         {
             "id": 78,
             "name": "Vorkath",
-            "rank": 26869,
+            "rank": 26871,
             "score": 50
         },
         {
