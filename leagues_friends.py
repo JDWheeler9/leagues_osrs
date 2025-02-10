@@ -36,7 +36,7 @@ names = ["Noclis", "Im sacred", "Lrauq", "GIM Tgump", "Dranathulhu", "EmoArbiter
 
 # Make directory for current day
 current_date = dt.now().strftime("%Y-%m-%d")
-directory_path = os.path.join(".", current_date)
+directory_path = os.path.join("./daily_runs", current_date)
 if not os.path.exists(directory_path):
     os.makedirs(directory_path)
     print(f"Directory created: {directory_path}")
@@ -45,7 +45,7 @@ else:
 
 # Fetch and write to files
 for name in names:
-        with open(f"{directory_path}/{name.replace(" ", "_")}.json", "w") as file:
+        with open("{}/{}.json".format(directory_path, name.replace(" ", "_")), "w") as file:
             result = fetch_hiscore_data(name)
             print(name + ":")
             print(result)
