@@ -1,6 +1,5 @@
 # This file must be used with "source bin/activate.csh" *from csh*.
 # You cannot run it directly.
-
 # Created by Davide Di Blasi <davidedb@gmail.com>.
 # Ported to Python 3.3 venv by Andrew Svetlov <andrew.svetlov@gmail.com>
 
@@ -9,7 +8,7 @@ alias deactivate 'test $?_OLD_VIRTUAL_PATH != 0 && setenv PATH "$_OLD_VIRTUAL_PA
 # Unset irrelevant variables.
 deactivate nondestructive
 
-setenv VIRTUAL_ENV /home/jwheeler/projects/leagues_friends
+setenv VIRTUAL_ENV /home/jwheeler/Projects/leagues_osrs
 
 set _OLD_VIRTUAL_PATH="$PATH"
 setenv PATH "$VIRTUAL_ENV/"bin":$PATH"
@@ -18,8 +17,8 @@ setenv PATH "$VIRTUAL_ENV/"bin":$PATH"
 set _OLD_VIRTUAL_PROMPT="$prompt"
 
 if (! "$?VIRTUAL_ENV_DISABLE_PROMPT") then
-    set prompt = '(leagues_friends) '"$prompt"
-    setenv VIRTUAL_ENV_PROMPT '(leagues_friends) '
+    set prompt = '(leagues_osrs) '"$prompt"
+    setenv VIRTUAL_ENV_PROMPT '(leagues_osrs) '
 endif
 
 alias pydoc python -m pydoc

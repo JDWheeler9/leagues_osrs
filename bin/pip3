@@ -1,4 +1,4 @@
-#!/home/jwheeler/projects/leagues_friends/bin/python3
+#!/home/jwheeler/Projects/leagues_osrs/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
